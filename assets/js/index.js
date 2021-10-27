@@ -71,7 +71,36 @@ const questions = [
 
 // TODO: Create a function to write README file
 const writeToFile = () => {
-
+    `
+    # ${title}
+    
+    ## Description
+    ${description}
+    
+    ## Table of Contents
+    [ Description. ](#Description)
+    [ Installation. ](#Installation)
+    [ Usage. ](#Usage)
+    [ Contribute. ](#Contribute)
+    [ Tests. ](#Tests)
+    [ Questions. ](#Questions)
+    
+    ## Installation
+    ${installation}
+    
+    ## Usage
+    ${usage}
+    
+    ## Contribute
+    ${contribute}
+    
+    ## Tests
+    ${tests}
+    
+    ## Questions
+    Visit my other projects https://github.com/${github}
+    Contact me at ${email}
+    `
 }
 
 // TODO: Create a function to initialize app
