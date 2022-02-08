@@ -141,7 +141,7 @@ function createReadMe() {
   inquirer
     .prompt(questions)
     .then((answers) => {
-      fs.writeFileSync('readme-generator/assets/README.md', generateReadme(answers))
+      fs.writeFileSync('readme/README.md', generateReadme(answers))
     })
     .catch((err) => console.error(err))
 }
