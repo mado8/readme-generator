@@ -38,6 +38,7 @@ To use, open the terminal in the root application directory. Type "node assets/j
 
 ## License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) </br> https://opensource.org/licenses/MIT
+https://user-images.githubusercontent.com/88465484/152923714-baf6a2c5-66a3-40b8-93b2-cc19fc231c39.mov
 
 </br>
     
