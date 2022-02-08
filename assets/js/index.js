@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs')
 const inquirer = require('inquirer')
-// const badges = require('.././')
 
 // prompts to generate README based on user input
 const questions = [
@@ -142,7 +141,7 @@ function createReadMe() {
   inquirer
     .prompt(questions)
     .then((answers) => {
-      fs.writeFileSync('README.md', generateReadme(answers))
+      fs.writeFileSync('readme-generator/assets/README.md', generateReadme(answers))
     })
     .catch((err) => console.error(err))
 }

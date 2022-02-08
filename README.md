@@ -13,13 +13,13 @@
     [ Questions. ](#Questions)
     
     ## Installation
-    Clone the repository. From there, open the terminal and type "node assets/js/index.js to run the application.
+    Clone the repository. You will need to install all npm packages. Open the terminal, and type "npm i" to do so.
     
     ## Usage
-    Follow the instructions from there to create a new readme.
+    Open the repository. From there, open the terminal and type "node assets/js/index.js to run the application. Follow the instructions from there to create a new readme.
 
     ##License
-    mit
+    Mit
     
     ## Contribute
     If you would like to contribute, feel free to clone this repository and add changes from there.
