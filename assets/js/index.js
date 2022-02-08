@@ -35,40 +35,21 @@ const questions = [
     name: 'license',
     message: 'Choose your license.',
     choices: [
-      'afl-3.0',
-      'apache-2.0',
-      'artistic-2.0',
-      'bsl-1.0',
-      'bsd-2-clause',
-      'bsd-3-clause',
-      'bsd-3-clause-clear',
-      'cc',
-      'cc0-1.0',
-      'cc-by-4.0',
-      'cc-by-sa-4.0',
-      'wtfpl',
-      'ecl-2.0',
-      'epl-1.0',
-      'epl-2.0',
-      'eupl-1.1',
-      'agpl-3.0',
-      'gpl',
-      'gpl-2.0',
-      'gpl-3.0',
-      'lgpl',
-      'lgpl-2.1',
-      'lgpl-3.0',
-      'isc',
-      'lppl-1.3c',
-      'ms-pl',
       'mit',
-      'mpl-2.0',
-      'osl-3.0',
-      'postgresql',
-      'ofl-1.1',
-      'ncsa',
+      'apache-2.0',
+      'boost',
+      'bsd-3',
+      'bsd-2',
+      'eclipse',
+      'gnu-gpl-3',
+      'ibm',
+      'mozilla',
       'unlicense',
+      'wtfpl',
       'zlib',
+      'sil',
+      'perl',
+      'artistic',
     ],
   },
   // prompt for contributing
@@ -98,10 +79,43 @@ const questions = [
   },
 ]
 
+const createBadge = (license) => {
+  switch (license) {
+    case 'mit':
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] </br> (https://opensource.org/licenses/MIT)'
+    case 'apache-2.0':
+      return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)] </br> (https://opensource.org/licenses/Apache-2.0)'
+    case 'boost': 
+      return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)] </br> (https://www.boost.org/LICENSE_1_0.txt)'
+    case 'bsd-3': 
+      return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)] </br> (https://opensource.org/licenses/BSD-3-Clause)'
+    case 'bsd-2':
+      return '[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)] </br> (https://opensource.org/licenses/BSD-2-Clause)'
+    case 'eclipse': 
+      return '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)] </br> (https://opensource.org/licenses/EPL-1.0)'
+    case 'gnu-gpl-3': 
+      return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)] </br> (https://www.gnu.org/licenses/gpl-3.0)'
+    case 'ibm': 
+      return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)] </br> (https://opensource.org/licenses/ISC)'
+    case 'mozilla': 
+      return '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)] </br> (https://opensource.org/licenses/MPL-2.0)'
+    case 'unlicense': 
+      return '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)] </br> (http://unlicense.org/)'
+    case 'wtfpl': 
+      return '[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)] </br> (http://www.wtfpl.net/about/)'
+    case 'zlib': 
+      return '[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)] </br> (https://opensource.org/licenses/Zlib)'
+    case 'sil': 
+      return '[![License: Open Font-1.1](https://img.shields.io/badge/License-OFL_1.1-lightgreen.svg)] </br> (https://opensource.org/licenses/OFL-1.1)'
+    case 'perl': 
+      return '[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)] </br> (https://opensource.org/licenses/Artistic-2.0)'
+    case 'artistic': 
+      return '[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)] </br> (https://opensource.org/licenses/Artistic-2.0)'
+  }
+}
+
 // TODO: Create a function to write README file
-const generateReadme = (
-  answers
-) => {
+const generateReadme = (answers) => {
   return `
     # ${answers.title}
     
@@ -123,7 +137,7 @@ const generateReadme = (
     ${answers.usage}
 
     ##License
-    ${answers.license}
+    ${createBadge(answers.license)}
     
     ## Contribute
     ${answers.contribute}
