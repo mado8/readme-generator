@@ -27,6 +27,6 @@ If you would like to contribute, feel free to clone this repository and add chan
 No tests available.
     
 ## Questions
-Visit my other projects https://github.com/mado8
+Visit my other projects https://github.com/mado8 </br>
 Contact me at madelineadonley@gmail.com
   
