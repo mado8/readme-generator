@@ -4,12 +4,12 @@
 This readme generator allows the user to quickly create a descriptive README file using node and inquirer js.
     
 ## Table of Contents
-   [ Description. ](#Description)
-   [ Installation. ](#Installation)
-   [ Usage. ](#Usage)
-   [ Contribute. ](#Contribute)
-   [ Tests. ](#Tests)
-   [ Questions. ](#Questions)
+   [ Description. ](#Description)</br>
+   [ Installation. ](#Installation)</br>
+   [ Usage. ](#Usage)</br>
+   [ Contribute. ](#Contribute)</br>
+   [ Tests. ](#Tests)</br>
+   [ Questions. ](#Questions)</br>
     
 ## Installation
 Clone the repository. You will need to install all npm packages. Open the terminal, and type "npm i" to do so.
