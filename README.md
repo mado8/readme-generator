@@ -34,11 +34,12 @@ To use, open the terminal in the root application directory. Type "node assets/j
 
 <img width="1439" alt="readme-generator-img" src="https://user-images.githubusercontent.com/88465484/152919510-a0223d6a-ab5f-4f13-8019-787f32191dbe.png">
 
+https://user-images.githubusercontent.com/88465484/152923714-baf6a2c5-66a3-40b8-93b2-cc19fc231c39.mov
+
 </br> 
 
 ## License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) </br> https://opensource.org/licenses/MIT
-https://user-images.githubusercontent.com/88465484/152923714-baf6a2c5-66a3-40b8-93b2-cc19fc231c39.mov
 
 </br>
     
